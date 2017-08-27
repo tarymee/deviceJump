@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>设备跳转DEMO</title>
+<script src="deviceJump.js"></script>
+<script>
+deviceJump.init({
+    link: {
+        'main': 'http://www.pcauto.com.cn/',
+        'wap': 'http://m.pcauto.com.cn/w/',
+        'wap_3g': 'http://m.pcauto.com.cn/',
+        'pad': 'http://pad.pcauto.com.cn/'
+    },
+    beforeJump: function (obj) {
+        console.log(obj)
+    }
+})
+</script>
+</head>
+<body>
+</body>
+</html>
